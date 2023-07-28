@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calebs Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="img/umbrella.svg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+    <h1 style="text-transform: uppercase; margin-bottom: 1.6rem; color: #0D0A0B;">Calebs weather App</h1>
+    <main style="background-color: #0D0A0B;">
+        <div class="inputs">
+            <!-- <button><img src="img/search.svg" alt=""></button> -->
+            <input type="text" class="search" placeholder="Search for a city...">
+            <div class="c-f hidden">
+                <p>
+                    <span class="celcius active">°C</span>
+                    <span class="farenheit">°F</span>
+                </p>
+            </div>
+        </div>
+     <div class="info opacity hidden" aria-live="polite">
+        <h2 class="location">Miami, United states</h2>
+        <p style="text-align: center;" class="date">Sunday, March 12, 2023 at 6:35 PM</p>
+        <div class="condition"><p>cloudy</p></div>
+        <div class="img">
+            <img class="image" src="" alt="">
+        </div>
+        <div class="temperature">
+            <p class="temp" style="text-align: center; font-size: 2.3rem;">78</p>
+        </div>
+        <div class="extra-info">
+            <div class="extra">
+                <div>
+                    <img src="img/thermometer.svg" alt="">
+                </div>
+                <div>
+                    <p>Feeling like</p>
+                    <p class="real-temp">86°</p>
+                </div>
+            </div>
+            <div class="extra">
+                <div>
+                    <img src="img/droplet.svg" alt="">
+                </div>
+                <div>
+                    <p>Humidity</p>
+                    <p class="humid">86%</p>
+                </div>
+            </div>
+            <div class="extra">
+                <div>
+                    <img src="img/wind.svg" alt="">
+                </div>
+                <div>
+                    <p>Wind</p>
+                    <p class="wind-speed">86 kph</p>
+                </div>
+            </div>
+            <div class="extra">
+                <div>
+                    <img src="img/barom.png" alt="">
+                </div>
+                <div>
+                    <p>Pressure</p>
+                    <p class="pressure">86 hPa</p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="error hidden">
+        <p style="font-size: 1.5rem; color: red; margin-top: 1rem;">Oops! Something Went Wrong...</p>
+        <p>Try Again Later.</p>
+     </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
