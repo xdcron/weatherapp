@@ -50,6 +50,8 @@ main{
 
 .inputs{
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     justify-content: space-between;
     align-items: center;
 }
