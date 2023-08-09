@@ -160,3 +160,23 @@ justify-content: center;
 };
 
 
+/* #searchDropdown{
+    border: none;
+    background-color: #0b0d0f;
+} */
+
+/* .select {
+    padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                background-color: #0b0d0f;
+                color: #BDC2BF;
+                font-size: 14px;
+  } */
+
+  option{
+    background-color: #0b0d0f;
+    color: #BDC2BF;
+  }
+
+
