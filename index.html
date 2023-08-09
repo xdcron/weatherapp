@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calebs Weather App</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="img/umbrella.svg">
@@ -18,10 +21,10 @@
         <div class="inputs">
             <!-- <button><img src="img/search.svg" alt=""></button> -->
             <input type="text" class="search" placeholder="Search for a city...">
+            <div style="display: flex; justify-content: center;"><select style="width: 50%;" id="searchDropdown"></select></div>
             <div class="c-f hidden">
                 <p>
                     <span class="celcius active">°C</span>
-                    <span class="farenheit">°F</span>
                 </p>
             </div>
         </div>
@@ -76,7 +79,7 @@
      </div>
 
      <div class="error hidden">
-        <p style="font-size: 1.5rem; color: red; margin-top: 1rem;">Cannot work on live site</p>
+        <p style="font-size: 1.5rem; color: red; margin-top: 1rem;">Oops! Something Went Wrong...</p>
         <p>Try Again Later.</p>
      </div>
     </main>
